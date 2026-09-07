@@ -1,0 +1,10 @@
+.upstream/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+*.egg-info/
+data/
+runs/
+dist/
+.ruff_cache/

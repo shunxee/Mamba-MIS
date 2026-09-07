@@ -1,0 +1,4 @@
+extends: ../main/isic17_mamba_mis_b.yaml
+model:
+  scan: ss2d
+output: runs/ablation/isic17_ss2d/seed42

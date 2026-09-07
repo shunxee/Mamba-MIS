@@ -1,0 +1,4 @@
+extends: ../main/isic17_mamba_mis_b.yaml
+model:
+  block: cnn
+output: runs/ablation/isic17_cnn/seed42

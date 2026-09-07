@@ -1,0 +1,7 @@
+extends: ../base.yaml
+model:
+  name: vmunetv2
+data:
+  root: data/polyp
+  manifest: data/polyp.csv
+output: runs/main/polyp_vmunetv2/seed42

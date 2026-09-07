@@ -1,0 +1,5 @@
+extends: ../main/isic18_mamba_mis_b.yaml
+model:
+  ab: false
+  mffb: true
+output: runs/ablation/isic18_mffb_only/seed42

@@ -1,0 +1,7 @@
+extends: ../base.yaml
+model:
+  name: transfuse
+data:
+  root: data/ISIC17
+  manifest: data/isic17.csv
+output: runs/main/isic17_transfuse/seed42

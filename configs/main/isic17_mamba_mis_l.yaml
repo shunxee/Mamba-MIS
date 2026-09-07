@@ -1,0 +1,7 @@
+extends: ../base.yaml
+model:
+  name: mamba_mis_l
+data:
+  root: data/ISIC17
+  manifest: data/isic17.csv
+output: runs/main/isic17_mamba_mis_l/seed42

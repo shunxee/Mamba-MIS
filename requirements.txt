@@ -1,0 +1,10 @@
+# Install matching CUDA/CPU torch wheels first; see scripts/install_ubuntu.sh.
+torch==2.8.0
+torchvision==0.23.0
+timm==1.0.19
+einops==0.8.1
+numpy==2.2.6
+Pillow==11.3.0
+PyYAML==6.0.2
+matplotlib==3.10.5
+pytest==8.4.1

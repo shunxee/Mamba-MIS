@@ -1,0 +1,25 @@
+model:
+  name: mamba_mis_b
+  image_size: 256
+  backend: auto
+  use_checkpoint: true
+data:
+  root: data/ISIC17
+  manifest: data/isic17.csv
+train:
+  epochs: 300
+  effective_batch_size: 32
+  micro_batch_size: 4
+  lr: 0.001
+  weight_decay: 0.01
+  t_max: 50
+  eta_min: 1.0e-05
+  amp: bf16
+  workers: 4
+  aux_weight: 0.0
+  seed: 42
+  deterministic: false
+  grad_clip: 1.0
+evaluation:
+  threshold: 0.5
+pretrained: null

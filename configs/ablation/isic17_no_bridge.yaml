@@ -1,0 +1,5 @@
+extends: ../main/isic17_mamba_mis_b.yaml
+model:
+  ab: false
+  mffb: false
+output: runs/ablation/isic17_no_bridge/seed42

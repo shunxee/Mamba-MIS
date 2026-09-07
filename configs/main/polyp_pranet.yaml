@@ -1,0 +1,7 @@
+extends: ../base.yaml
+model:
+  name: pranet
+data:
+  root: data/polyp
+  manifest: data/polyp.csv
+output: runs/main/polyp_pranet/seed42
