@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-# @Time : 2024/12/2 16:07
 # @Author : Xee
 # @File : malunet.py
 import torch

@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-# @Time : 2024/11/7 15:06
 # @Author : Xee
 # @File : AttU_Net.py
 import torch

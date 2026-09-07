@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-# @Time : 2024/11/29 14:05
 # @Author : Xee
 # @File : unetv2.py
 import os.path

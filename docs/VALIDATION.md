@@ -1,7 +1,5 @@
 # 验证记录
 
-日期：2026-09-08。
-
 ## 已执行
 
 测试环境为项目独立虚拟环境：Windows、Python 3.12、PyTorch 2.8.0+cpu、torchvision 0.23.0+cpu，以及 requirements.txt 中固定的直接依赖。这里的 CPU 测试不代表 Ubuntu CUDA 构建已经验证。

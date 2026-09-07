@@ -244,7 +244,7 @@ class SS2D(nn.Module):
         self,
         d_model,
         d_state=16,
-        # d_state="auto", # 20240109
+        # d_state="auto",
         d_conv=3,
         expand=2,
         dt_rank="auto",
@@ -264,7 +264,7 @@ class SS2D(nn.Module):
         super().__init__()
         self.d_model = d_model
         self.d_state = d_state
-        # self.d_state = math.ceil(self.d_model / 6) if d_state == "auto" else d_model # 20240109
+        # self.d_state = math.ceil(self.d_model / 6) if d_state == "auto" else d_model
         self.d_conv = d_conv
         self.expand = expand
         self.d_inner = int(self.expand * self.d_model)
@@ -652,7 +652,7 @@ class VSSM(nn.Module):
             layer = VSSLayer(
                 dim=dims[i_layer],
                 depth=depths[i_layer],
-                d_state=math.ceil(dims[0] / 6) if d_state is None else d_state,  # 20240109
+                d_state=math.ceil(dims[0] / 6) if d_state is None else d_state,
                 drop=drop_rate,
                 attn_drop=attn_drop_rate,
                 drop_path=dpr[sum(depths[:i_layer]):sum(depths[:i_layer + 1])],
@@ -667,7 +667,7 @@ class VSSM(nn.Module):
             layer = VSSLayer_up(
                 dim=dims_decoder[i_layer],
                 depth=depths_decoder[i_layer],
-                d_state=math.ceil(dims[0] / 6) if d_state is None else d_state,  # 20240109
+                d_state=math.ceil(dims[0] / 6) if d_state is None else d_state,
                 drop=drop_rate,
                 attn_drop=attn_drop_rate,
                 drop_path=dpr_decoder[sum(depths_decoder[:i_layer]):sum(depths_decoder[:i_layer + 1])],
@@ -792,7 +792,7 @@ class VSSM_V2(nn.Module):
             layer = VSSLayer(
                 dim=dims[i_layer],
                 depth=depths[i_layer],
-                d_state=math.ceil(dims[0] / 6) if d_state is None else d_state,  # 20240109
+                d_state=math.ceil(dims[0] / 6) if d_state is None else d_state,
                 drop=drop_rate,  # 0
                 attn_drop=attn_drop_rate,  # 0
                 drop_path=dpr[sum(depths[:i_layer]):sum(depths[:i_layer + 1])],
@@ -807,7 +807,7 @@ class VSSM_V2(nn.Module):
         #     layer = VSSLayer_up(
         #         dim=dims_decoder[i_layer],
         #         depth=depths_decoder[i_layer],
-        #         d_state=math.ceil(dims[0] / 6) if d_state is None else d_state, # 20240109
+        #         d_state=math.ceil(dims[0] / 6) if d_state is None else d_state,
         #         drop=drop_rate,
         #         attn_drop=attn_drop_rate,
         #         drop_path=dpr_decoder[sum(depths_decoder[:i_layer]):sum(depths_decoder[:i_layer + 1])],
